@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Forgery Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Signature Detection </h1>
+    </header>
+    <div class="background">
+        <div class="container">
+            <h2>Upload the Image</h2>
+
+            <input type="file" id="file-input" accept="image/*">
+
+            <div class="consent">
+                <input type="checkbox" id="consent-checkbox" required>
+                <label for="consent-checkbox">I consent to the processing of this image.</label>
+            </div>
+
+            <button id="upload-button">Upload and Submit</button>
+            <div id="loader" class="loader" style="display: none;">Processing...</div>
+            <div id="result" class="result">Result</div>
+            <div id="error-message" class="error" style="display: none;"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
